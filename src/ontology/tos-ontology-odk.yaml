@@ -1,0 +1,11 @@
+id: tos-ontology
+title: Tree of Sex ontology
+github_org: Tree-of-Sex
+repo: tos-ontology
+import_group:
+  products:
+    - id: ro
+    - id: bfo
+    - id: po
+    - id: pato
+    - id: oba

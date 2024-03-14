@@ -1,0 +1,28 @@
+# PURL configuration for http://purl.obolibrary.org/obo/tos-ontology
+
+idspace: TOS-ONTOLOGY
+base_url: /obo/tos-ontology
+
+products:
+- tos-ontology.owl: https://raw.githubusercontent.com/Tree-of-Sex/tos-ontology/main/tos-ontology.owl
+- tos-ontology.obo: https://raw.githubusercontent.com/Tree-of-Sex/tos-ontology/main/tos-ontology.obo
+
+term_browser: ontobee
+example_terms:
+- TOS-ONTOLOGY_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/Tree-of-Sex/tos-ontology/v
+
+- prefix: /tracker/
+  replacement: https://github.com/Tree-of-Sex/tos-ontology/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/TOS-ONTOLOGY?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/Tree-of-Sex/tos-ontology/main/
+
